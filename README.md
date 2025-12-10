@@ -16,7 +16,7 @@ MusicFinder is a comprehensive music portal that allows users to:
 
 ### Backend
 - **Framework**: Node.js with Express.js
-- **Database**: PostgreSQL
+- **Database**: MongoDB Atlas (Cloud Database)
 - **Session Management**: express-session with secure cookies
 - **API Integration**: Spotify Web API
 - **Security**: Helmet.js, CORS, rate limiting, bcrypt password hashing
@@ -38,7 +38,7 @@ MusicFinder is a comprehensive music portal that allows users to:
 
 ### Prerequisites
 - Node.js (v14 or higher)
-- PostgreSQL (v12 or higher)
+- MongoDB Atlas account (free tier available)
 - Spotify Developer Account (for API credentials)
 
 ### Installation
@@ -54,8 +54,9 @@ MusicFinder is a comprehensive music portal that allows users to:
    npm install
    ```
 
-3. **Configure PostgreSQL Database**
-   - Create a new database named `musicfinder`
+3. **Configure MongoDB Database**
+   - Create a free MongoDB Atlas cluster at https://www.mongodb.com/cloud/atlas
+   - Get your connection string
    - Update database credentials in `.env` file
 
 4. **Set up environment variables**
@@ -67,7 +68,7 @@ MusicFinder is a comprehensive music portal that allows users to:
    ```
 
    Required environment variables:
-   - `DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`: PostgreSQL connection details
+   - `MONGODB_URI`: MongoDB Atlas connection string
    - `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`: Spotify API credentials ([Get them here](https://developer.spotify.com/dashboard))
    - `SESSION_SECRET`: Random string for session encryption
    - `PORT`: Server port (default: 3000)

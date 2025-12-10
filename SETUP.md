@@ -2,10 +2,11 @@
 
 ## Quick Start Checklist
 
-### 1. PostgreSQL Setup
-- [ ] Install PostgreSQL on your system
-- [ ] Create a database named `musicfinder`
-- [ ] Note your database credentials (username, password, host, port)
+### 1. MongoDB Atlas Setup
+- [ ] Create free account at https://www.mongodb.com/cloud/atlas
+- [ ] Create a new cluster (free tier M0)
+- [ ] Create a database user with password
+- [ ] Get your connection string
 
 ### 2. Spotify API Setup
 1. Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
@@ -30,11 +31,7 @@
    NODE_ENV=development
 
    # Database
-   DB_HOST=localhost
-   DB_PORT=5432
-   DB_NAME=musicfinder
-   DB_USER=postgres
-   DB_PASSWORD=your_postgres_password
+   MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/musicfinder
 
    # Session
    SESSION_SECRET=generate_a_random_string_here
