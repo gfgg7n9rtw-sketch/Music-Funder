@@ -16,7 +16,7 @@
 - **Type**: Full-stack web application
 - **Backend**: Node.js with Express.js
 - **Frontend**: HTML/CSS/JavaScript (SoundCloud-inspired design)
-- **Database**: PostgreSQL with full schema
+- **Database**: MongoDB Atlas with Mongoose ODM
 - **APIs**: Spotify Web API integration
 - **Features**: 
   - User authentication and session management
@@ -29,7 +29,7 @@
 
 ## Next Steps
 
-1. **Configure PostgreSQL**: Install and create `musicfinder` database
+1. **Configure MongoDB Atlas**: Create cluster and database `musicfinder`
 2. **Get Spotify API Credentials**: Visit https://developer.spotify.com/dashboard
 3. **Set up .env file**: Copy .env.example to .env and add your credentials
 4. **Initialize Database**: Run `npm run init-db`

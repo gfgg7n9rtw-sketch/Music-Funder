@@ -179,8 +179,8 @@ Search_History
 
 ### Backend
 - Express.js - Web framework
-- PostgreSQL - Database
-- pg - PostgreSQL client
+- MongoDB Atlas - Cloud Database
+- Mongoose - MongoDB ODM
 - express-session - Session management
 - bcryptjs - Password hashing
 - axios - HTTP client for Spotify API
@@ -251,4 +251,4 @@ Nikolajs Lamans
 
 - Spotify Web API for music data
 - SoundCloud for design inspiration
-- PostgreSQL and Node.js communities
+- MongoDB and Node.js communities

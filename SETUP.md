@@ -79,10 +79,10 @@ http://localhost:3000
 ## Troubleshooting
 
 ### Database Connection Issues
-- Ensure PostgreSQL is running
-- Verify database credentials in `.env`
-- Check if the database `musicfinder` exists
-- Test connection: `psql -U postgres -d musicfinder`
+- Ensure MongoDB Atlas cluster is active
+- Verify connection string in `.env`
+- Check if your IP address is whitelisted in MongoDB Atlas
+- Test connection through MongoDB Compass or Atlas UI
 
 ### Spotify API Issues
 - Verify Client ID and Secret are correct
@@ -133,11 +133,8 @@ npm install
 ### Database Reset
 To reset the database:
 ```bash
-# Drop and recreate database (PostgreSQL)
-psql -U postgres
-DROP DATABASE musicfinder;
-CREATE DATABASE musicfinder;
-\q
+# MongoDB Atlas - Drop collections via MongoDB Compass or Atlas UI
+# Or delete and recreate the database in Atlas Dashboard
 
 # Reinitialize
 npm run init-db
@@ -214,4 +211,4 @@ For issues or questions:
 - Check the README.md for detailed documentation
 - Review Spotify API documentation: https://developer.spotify.com/documentation/web-api
 - Review Express.js documentation: https://expressjs.com
-- Review PostgreSQL documentation: https://www.postgresql.org/docs
+- Review MongoDB documentation: https://docs.mongodb.com
