@@ -244,7 +244,7 @@ MIT License - feel free to use this project for learning and development.
 
 ## 👨‍💻 Author
 
-Created as a web development assessment project demonstrating full-stack capabilities.
+Nikolajs Lamans 
 
 ## 🙏 Acknowledgments
 
